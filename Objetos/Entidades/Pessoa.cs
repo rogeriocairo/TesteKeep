@@ -7,8 +7,8 @@ namespace Objetos.Entidades
     {
         public Pessoa(string nome, string sexo, DateTime dataNascimento, string nacionalidade, EstadoCivilType estadoCivil)
         {
-            Nome = nome;            
-            Sexo = sexo;
+            Nome = nome;
+            Sexo = sexo;            
             DataNascimento = dataNascimento;
             Nacionalidade = nacionalidade;
             EstadoCivil = estadoCivil;
@@ -16,7 +16,7 @@ namespace Objetos.Entidades
 
         public string Nome { get; set; }
 
-        public int Idade { get =>  (DateTime.Today.Year - DataNascimento.Year); }
+        public int Idade { get => (DateTime.Today.Year - DataNascimento.Year); }
 
         public string Sexo { get; private set; }
 
